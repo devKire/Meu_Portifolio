@@ -78,7 +78,7 @@ h6, .h6 { font-size: 1rem; }
 
 .e-zine {
   position: relative;
-  max-width: 800px;
+  max-width: auto;
   margin: 0 auto;
   padding: 40px;
   box-shadow: 15px 10px 10px rgba(0.4, 0.3, 0.2, 0.1);
@@ -289,28 +289,6 @@ section:not(:last-child) {
   color: transparent;
 }
 
-/* Pseudo-elemento ::before para a seta */
-.floating-box::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100px; /* Posicione a seta à esquerda da caixa */
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent rgba(0, 0, 0, 0.8); /* Cor da seta */
-  transform: translateY(-50%); /* Centralize verticalmente */
-  pointer-events: none; /* Evita que a seta intercepte eventos do mouse */
-}
-
-/* Animação fadeIn e fadeOut */
-@keyframes fadeInOut {
-  0%, 100% {
-      opacity: 0;
-  }
-  10%, 90% {
-      opacity: 1;
-  }
-}
 
 /* Botão para abrir a barra lateral direita */
 /* .sidebar-toggle-button {
@@ -329,11 +307,15 @@ section:not(:last-child) {
 .sidebar-toggle-button {
   position: fixed;
   top: 10px; 
-  left: 10px; 
+  right: 10px; 
   cursor: pointer;
   z-index: 1001;
+  padding: 3px 7px;
+  background-color: white;
+  border-radius: 10px;
   color: #000000; /* Cor do botão */
   font-size: 24px; /* Tamanho do ícone do botão */
+  transition: transform 0.3s ease;
 }
 
 /* Classe adicionada quando o botão é clicado */
@@ -378,12 +360,15 @@ section:not(:last-child) {
 /* Estilo para a barra lateral à esquerda */
 .sidebar {
   position: fixed;
-  top: 0;
-  left: -100px; 
+  top: 120px;
   width: 100px;
-  height: 100%;
   transition: left 0.3s; 
   z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
 }
 
 /* Alinhe os ícones sociais no meio à esquerda em formato de coluna */
@@ -391,7 +376,7 @@ section:not(:last-child) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .social-icon {

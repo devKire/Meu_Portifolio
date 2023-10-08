@@ -17,9 +17,6 @@ window.addEventListener('scroll', () => {
   lastScrollTop = currentScrollTop;
 });
 
-
-
-
 // barra lateral direita:
 
 // function toggleSidebar() {
@@ -40,22 +37,23 @@ window.addEventListener('scroll', () => {
 function toggleSidebar() {
   var sidebar = document.querySelector(".sidebar");
   var sidebarToggleButton = document.querySelector(".sidebar-toggle-button");
+  var header = document.querySelector(".e-zine-header");
+  var sidebarToggleButton = document.querySelector(".sidebar-toggle-button");
 
   if (sidebar.style.left === "0px" || sidebar.style.left === "") {
       sidebar.style.left = "-100px"; // Esconder a barra lateral
+      if (header){
+        header.style.transition = 'top 0.3s ease';
+        header.style.top = '-200px';
+      }
       sidebarToggleButton.classList.remove("clicked"); // Remover a classe clicked
   } else {
       sidebar.style.left = "0px"; // Mostrar a barra lateral
+      if (header){
+        header.style.transition = 'top 0.3s ease';
+        header.style.top = '0';
+      }
+      
       sidebarToggleButton.classList.add("clicked"); // Adicionar a classe clicked
   }
 }
-
-
-//caixa flutuante temporaria
-var floatingBox = document.getElementById("floating-box");
-floatingBox.style.display = "block";
-
-// Esconda a caixa flutuante após alguns segundos
-setTimeout(function() {
-  floatingBox.style.display = "none";
-}, 5000); // 5000 milissegundos (5 segundos)
