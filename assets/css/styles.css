@@ -142,7 +142,6 @@ h6, .h6 { font-size: 1rem; }
 /* Cabeçalho */
 .header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff; /* Cor do texto no cabeçalho */
@@ -168,7 +167,7 @@ h6, .h6 { font-size: 1rem; }
   letter-spacing: 2px; /* Espaçamento entre as letras */
   font-weight: 500;
   font-size: 18px; /* Tamanho da fonte do texto mono */
-  margin-bottom: 20px; /* Espaçamento inferior do texto mono */
+  margin-bottom: 100px; /* Espaçamento inferior do texto mono */
 }
 
 /* Título específico no cabeçalho */
@@ -387,6 +386,25 @@ section:not(:last-child) {
 }
 
 .social-icon img {
+  width: 50px; 
+}
+
+/* social icons da pg index */
+
+.social {
+  margin-bottom: 100px; 
+}
+.social-icons-index {
+  display: inline-block; 
+}
+
+.social-icon-index {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.social-icon-index img {
+  filter: brightness(0);
   width: 50px; 
 }
 
