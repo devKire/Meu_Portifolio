@@ -362,8 +362,9 @@ section:not(:last-child) {
 .sidebar {
   position: fixed;
   top: 120px;
+  right: -100px;  
   width: 100px;
-  transition: left 0.3s; 
+  transition: right 0.3s; 
   z-index: 1000;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

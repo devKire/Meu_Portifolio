@@ -40,15 +40,15 @@ function toggleSidebar() {
   var header = document.querySelector(".e-zine-header");
   var sidebarToggleButton = document.querySelector(".sidebar-toggle-button");
 
-  if (sidebar.style.left === "0px" || sidebar.style.left === "") {
-      sidebar.style.left = "-100px"; // Esconder a barra lateral
+  if (sidebar.style.right === "0px" || sidebar.style.right === "") {
+      sidebar.style.right = "-100px"; // Esconder a barra lateral
       if (header){
         header.style.transition = 'top 0.3s ease';
         header.style.top = '-200px';
       }
       sidebarToggleButton.classList.remove("clicked"); // Remover a classe clicked
   } else {
-      sidebar.style.left = "0px"; // Mostrar a barra lateral
+      sidebar.style.right = "0px"; // Mostrar a barra lateral
       if (header){
         header.style.transition = 'top 0.3s ease';
         header.style.top = '0';
