@@ -8,6 +8,10 @@ body {
   background-color: #f2f2f2;
 }
 
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
 /* Títulos */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -152,22 +156,22 @@ h6, .h6 { font-size: 1rem; }
   text-align: center;
 }
 
+.apresentacao {
+  margin-top: 100px;
+}
 .header .header-content .header-subtitle {
   font-weight: 700;
   font-size: 24px; /* Tamanho da fonte do subtítulo */
-  margin-bottom: 10px; /* Espaçamento inferior do subtítulo */
 }
 
 .header .header-content .header-title {
   font-size: 64px; /* Tamanho da fonte do título */
-  margin-bottom: 20px; /* Espaçamento inferior do título */
 }
 
 .header .header-content .header-mono {
   letter-spacing: 2px; /* Espaçamento entre as letras */
   font-weight: 500;
   font-size: 18px; /* Tamanho da fonte do texto mono */
-  margin-bottom: 100px; /* Espaçamento inferior do texto mono */
 }
 
 /* Título específico no cabeçalho */
@@ -393,7 +397,7 @@ section:not(:last-child) {
 /* social icons da pg index */
 
 .social {
-  margin-bottom: 100px; 
+  margin-top: 100px; 
 }
 .social-icons-index {
   display: inline-block; 
@@ -455,6 +459,9 @@ section:not(:last-child) {
   text-align:center;
 }
 
+.btIndex {
+  margin-top: 100px;
+}
 /* Botão */
 .button {
   display: inline-block;
@@ -483,3 +490,23 @@ footer {
   padding-top: 30px;
   color: #000000;
 }
+
+.containerAvatar {
+  position: relative;
+  height: 200px; 
+}
+
+.avatar-img {
+  margin: 50px auto; 
+  border: 10px solid white;
+  transition: 0.5s;
+  z-index: 1; 
+  box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+
+
+
