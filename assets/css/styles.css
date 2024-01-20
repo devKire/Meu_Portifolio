@@ -3,13 +3,15 @@ body {
   font-family: Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: hsl(0, 0%, 100%);
+  color: white !important;
   text-align: left;
   background-color: #f2f2f2;
+  
 }
 
 a {
   text-decoration: none; /* Remove o sublinhado dos links */
+  color: white !important;
 }
 
 /* Títulos */
@@ -62,7 +64,6 @@ h6, .h6 { font-size: 1rem; }
   border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
-  color: #ffffff;
 }
 
 
@@ -135,7 +136,6 @@ h6, .h6 { font-size: 1rem; }
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff; /* Cor do texto no cabeçalho */
   padding: 40px 0; /* Espaçamento interno no cabeçalho */
 }
 
@@ -189,7 +189,6 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 20px;
@@ -199,7 +198,6 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #3f3f3f;
-  color: #ffffff;
 }
 
 /* Estilos para telas menores (por exemplo, telas de dispositivos móveis) */
@@ -231,7 +229,6 @@ li {
   font-weight: bold;
   font-size: 20px; 
 }
-
 
 /* Estilos para as seções */
 section {
@@ -424,7 +421,7 @@ section:not(:last-child) {
   margin: 0;
   font-size: 22px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff !important;
   margin-bottom: 10px;
 }
 
@@ -478,7 +475,7 @@ footer {
   color: #000000;
 }
 
-.containerAvatar {
+.Avatar {
   position: relative;
   height: 200px; 
 }
